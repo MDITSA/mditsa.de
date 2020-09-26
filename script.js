@@ -13,11 +13,11 @@ $(function () {
         /* screamer_vr */
         $("#screamer_vr").css("transform","translate("+($(window).width()/2-evt.pageX)/80+"px, "+($(window).height()/2-evt.pageY)/80+"px)");
         /* Scan bg */
-        $("article:nth-of-type(3)>header").css("background-position",50+($(window).width()/2-evt.pageX)/500+"% "+($(window).height()/2-(evt.pageY-$("article:nth-of-type(3)>header").offset().top))/500+"%");
+        /*$("article:nth-of-type(3)>header").css("background-position",50+($(window).width()/2-evt.pageX)/500+"% "+($(window).height()/2-(evt.pageY-$("article:nth-of-type(3)>header").offset().top))/500+"%");*/
         /* Download */
-        $("#download+p>img").css("transform","translate("+($(window).width()/2-evt.pageX)/80+"px, "+($(window).height()/2-evt.pageY)/80+"px)");
+        $("#download+p>img").css("transform","translate("+($(window).width()/2-evt.pageX)/90+"px, "+($(window).height()/2-evt.pageY)/80+"px)");
         /* Share */
-        $("article:nth-of-type(7)").css("background-position",50+($(window).width()/2-evt.pageX)/500+"% "+($(window).height()/2-(evt.pageY-$("article:nth-of-type(3)>header").offset().top))/500+"%");
+        /*$("article:nth-of-type(7)").css("background-position",50+($(window).width()/2-evt.pageX)/500+"% "+($(window).height()/2-(evt.pageY-$("article:nth-of-type(3)>header").offset().top))/500+"%");*/
     });
     
     
@@ -78,7 +78,7 @@ $(function () {
     });
     
     
-    //Modal VR
+/*    //Modal VR
     var modalVRAnimated = false;
     var elemBeforeAnimVR = $("article:nth-of-type(2)>div>*").size();
     $(window).scroll(function () {
@@ -146,7 +146,7 @@ $(function () {
         },
         axis: "x"
     });
-
+*/
     //Reuses smooth show
     $("article:nth-of-type(4)>div").css({
         "opacity":0,
@@ -164,9 +164,10 @@ $(function () {
         }
     });
     
+
     //Download btn
     $("#download").click(function(){    
-        $("<div title=\"Download the font\"><p>Are you OK with the font's licence condition describe here?<br/><br/>The font is published under the <a rel=\"license\" href=\"http://creativecommons.org/licenses/by/4.0/\" target=\"_blank\">Creative commons Attribution (CC-BY) licence</a>. So YOU CAN use the font for all your creations (even for commercial creations) only if you put the link \"<strong>http://watchdogsfont.com</strong>\" OR \"<strong>http://www.dafont.com/hacked.font</strong>\" OR the font creator's name \"<strong>David Libeau</strong>\" in your credits (YouTube video description, website About page...).</p></div>").dialog({
+        $("<div title=\"Don't trip over that leash... :)\"><p>If you like my stuff/\"work\", want me to continue or just want to spend some money, here's your chance...<br/><br/>If you agree, just go on with YES, otherwise you'll make me cry :( <br><br>If there are questions (e.g. other options to support), just contact me. Infos are on the bottom of the site... </p></div>").dialog({
                         dialogClass: "retroHackDialog fakedialog",
                         resizable: false,
                         draggable: true,
@@ -174,12 +175,12 @@ $(function () {
                         width: 800,
                         modal: true,
                         buttons: {
-                            "NO": function () {
-                                window.open("https://hackedfont.com","_blank");
+                            "(ﾟ︵ﾟ)": function () {
+                                window.open("https://www.buymeacoffee.com/mditsa","_blank");
                                 $(this).dialog("destroy");
                             },
-                            "YES": function () {
-                                window.open("https://hackedfont.com","_blank");
+                            "Support": function () {
+                                window.open("https://www.buymeacoffee.com/mditsa","_blank");
                                 $(this).dialog("destroy");
                             },
                         },

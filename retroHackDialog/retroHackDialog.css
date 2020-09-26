@@ -6,7 +6,7 @@
 /* External ressource needed : */
 @font-face {
     font-family: PixelOperator;
-    src: url(/font/PixelOperatorMono.ttf);
+    src: url(../font/PixelOperatorMono.ttf);
 }
 /* 
 > 1 (free) font 
@@ -82,5 +82,5 @@
         margin: -10px 0 0 0!important;
 }
 .retroHackDialog .ui-icon {
-    background-image: url("//dav.li/jquery/ui/images/ui-icons_ffffff_256x240.png")!important;
+    background-image: url("../jquery/ui/images/ui-icons_ffffff_256x240.png")!important;
 }

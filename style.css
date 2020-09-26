@@ -12,7 +12,7 @@ html, body {
 
 @font-face {
     font-family: Hacked;
-    src: url(https://hackedfont.com/HACKED.ttf);
+    src: url(font/HACKED.ttf);
 }
 @font-face {
     font-family: PixelOperatorBold;
@@ -33,7 +33,7 @@ body>header, main {
     padding: 2.5vw;
 }
 body>header{
-    height: 80vh;
+    height: 90vh;
     background-color: #F5FAFC;
     border: 2.5vw solid white;
     margin-bottom: -6vw;
@@ -154,7 +154,7 @@ body>header>h2>strong{
     width: 30%;
     opacity: 0.2;
 }
-#headervideo>iframe{
+#headervideo>video{
     position: absolute;
     top: 0;
     min-height: 100%;
@@ -302,51 +302,51 @@ article:nth-of-type(2)>div .ui-dialog {
     z-index: 15!important;
 }
 
-#screamer_vr{
+#screamer{
     position: absolute;
     right: -5%;
     bottom: 0;
     width: 105%;
     height: 110%;
-    background-image: url(img/screamer_vr.png);
+    background-image: url(img/screamer.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom right;
 }
 
-#ghost_vr{
+#ghost{
     position: absolute;
     left: 0;
     top: 10%;
     width: 70%;
     height: 60%;
-    background-image: url(img/ghost_vr_experience.png);
+    background-image: url(img/ghost_experience.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
 }
 
 @media screen and (max-width: 1440px) {
-    #ghost_vr {
+    #ghost {
         width: 50%;
     }
 }
 @media screen and (max-width: 1240px) {
-    #ghost_vr {
+    #ghost {
         width: 30%;
     }
 }
 @media screen and (max-width: 1000px) {
-    #screamer_vr {
+    #screamer {
         display: none;
     }
-    #ghost_vr {
+    #ghost {
         width: 100%;
         top: 20px;
     }
 }
 
-#chatter_teeth_vr {
+#chatter_teeth {
     position: absolute;
     left: 0;
     bottom: -7%;
@@ -364,7 +364,7 @@ article:nth-of-type(2)>div .ui-dialog {
     -o-transition: all 0.05s ease-in-out;
     transition: all 0.05s ease-in-out;
 }
-#chatter_teeth_vr:hover{
+#chatter_teeth:hover{
     -webkit-filter: grayscale(0);
     filter: grayscale(0);
     transform: scale(1.02);
@@ -376,7 +376,7 @@ article:nth-of-type(2)>div .ui-dialog {
     transition: all 0.2s ease;
 }
 @media screen and (max-width: 1000px) {
-    #chatter_teeth_vr {
+    #chatter_teeth {
         width: 100%;
     }
 }
@@ -544,7 +544,7 @@ article:nth-of-type(4)>div>div:first-of-type{
     width: 500px;
     padding-left: 2.5vw;
 }
-.twitter-tweet{
+.quote{
     display: inline-block!important;
 }
 article:nth-of-type(4)>div>div:first-of-type>div>blockquote{
@@ -656,7 +656,7 @@ article:nth-of-type(5)>p>img{
 
 #download{
     position: relative;
-    height: 50px;
+    height: 70px;
     padding: 20px;
     text-align: center;
     overflow: hidden;
@@ -775,10 +775,10 @@ article:nth-of-type(7){
     padding-bottom: 150px;
     margin-top: 50px;
     overflow: hidden;
-    background-image: url(img/I_AM_DEDSEC.png);
+    /*background-image: url(img/I_AM_DEDSEC.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: contain;*/
 }
 
 article:nth-of-type(7)>p{
@@ -819,7 +819,7 @@ article:nth-of-type(7)>p>a:hover>img:first-of-type{
 }
 article:nth-of-type(7)>p>a>img:last-of-type{
     position: absolute;
-    right: -10%;
+    right: -40%;
     top: -50%;
     width: 70%;
     opacity: 0.9;
